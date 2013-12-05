@@ -26,7 +26,11 @@ public class Card
       suit = cardSuit;
       rank = cardRank;
    }
-   
+   public Card(Card card)
+   {
+      suit = card.suit;
+      rank = card.rank;
+   }
    public int getSuit()
    {
       return suit;
