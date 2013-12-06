@@ -25,23 +25,6 @@ public class War
          int secondi = i + 26;
          player2Stack.add(deck.getCard(secondi));
       }
-         //print the stacks
-         
-         //System.out.println(player1Stack.get(i));
-         //System.out.println("XXXXXX");
-         //System.out.println(player2Stack.get(i));
-       
-       //tester
-       
-//        for (i = 0; i<26; i++)
-//        {
-//           System.out.println(player1Stack.get(i));
-//        }
-//        System.out.println("XXXXXX");
-//        for (i = 0; i<26; i++)
-//        {
-//          System.out.println(player2Stack.get(i));
-//        }
    }  
    public void Play()
    {
