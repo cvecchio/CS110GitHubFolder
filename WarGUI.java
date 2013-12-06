@@ -1,4 +1,9 @@
+//Chris Vecchio
+//CS110
 // GUI for War
+//
+//---------PLEASE SEE README.txt FOR MORE INFORMATION---------------
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -8,7 +13,7 @@ public class WarGUI extends JFrame implements ActionListener
 {
    private War Play = new War();
    private JPanel topPanel; //background area
-   private JButton button; 
+   private JButton button; //button
    private JLabel player1Stack,player2Stack,player1Card,player2Card;
    private JLabel status;  // game status
    private JLabel title;   // static title
@@ -34,10 +39,11 @@ public class WarGUI extends JFrame implements ActionListener
       topPanel.add(button);
       button.addActionListener(this);
       
+      //set the four areas for the cards, including two war piles
       player1Stack = new JLabel();
       player1Stack.setIcon(new ImageIcon("Cardpics/back.jpg"));
-      //player1Stack = new JPanel(new GridLayout(5,3));
-      //Image img = player1Stack.getIcon("Cardpics/back.jpg");  
+      //player1Stack = new JPanel(new GridLayout(5,3));                    //attempt to resize cards
+      //Image img = player1Stack.getIcon("Cardpics/back.jpg");      
       //Image newimg = img.getScaledInstance(230, 310,java.awt.Image.SCALE_SMOOTH);  
       //player1Stack = new ImageIcon(newimg);        
       topPanel.add(player1Stack);
@@ -62,15 +68,15 @@ public class WarGUI extends JFrame implements ActionListener
    public void actionPerformed(ActionEvent e)
    {
    if (e.getSource() == button)
-      {
+   //flipping cards
+   {
       //Play.Play();
       player1Stack.setIcon(new ImageIcon("Cardpics/2c.jpg"));
       player2Stack.setIcon(new ImageIcon("Cardpics/3d.jpg"));
       player1Card.setIcon(new ImageIcon("Cardpics/4d.jpg"));
       player2Card.setIcon(new ImageIcon("Cardpics/5s.jpg"));
-      }
    }
-
    }
+}
    
    

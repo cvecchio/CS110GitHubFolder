@@ -3,6 +3,7 @@
 //War Game + command window game
 //
 //uses card
+//please see README.txt for further information
 
 import java.util.*; 
 
